@@ -50,7 +50,8 @@ type NodeBalancerCreateOptions struct {
 	Region             string                             `json:"region,omitempty"`
 	ClientConnThrottle *int                               `json:"client_conn_throttle,omitempty"`
 	Configs            []*NodeBalancerConfigCreateOptions `json:"configs,omitempty"`
-	Tags               []string                           `json:"tags"`
+	Tags               []string                           `json:"tags,omitempty"`
+	IPv4               *string                            `json:"ipv4,omitempty"`
 	FirewallID         int                                `json:"firewall_id,omitempty"`
 }
 
